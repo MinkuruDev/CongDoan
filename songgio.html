@@ -47,6 +47,7 @@
         <h2>Phân Cảnh 2</h2>
 
         <p>Chị Hợp thẫn thờ đi lại trước phòng cấp cứu (thời gian chậm chạp qua đi, ca mổ kéo dài trong nhiều giờ đồng hồ)</p>
+        <p>(chạy tiếng ding sẽ tự động tắt tiếng đồng hồ)</p>
         <audio src="./Audio/TickingClock.mp3" controls id="tick"></audio>
         <audio src="./Audio/Ding.mp3" controls id="ding"></audio>
         <p>(Hình ảnh chiếc đồng hồ quay hiển thị thời gian rất dài….)</p>
@@ -59,7 +60,7 @@
         <br>
 
         <p>(bé Nhi đội mũ đeo túi đi bán vé số)</p>
-        <audio src="./Audio/SGDemNayConMuaKo.mp3" controls></audio>
+        <audio src="./Audio/HokageFuneral.mp3" controls id="sadsong"></audio>
         <p><b>Bé Nhi</b> Cô ơi mua vé số cho con đi cô. Chú ơi mua vé số cho con đi chú… Chú ơi ngày hôm nay con chưa bán được tờ nào cả… (diễn viên quần chúng)</p>
         <p><b>cán bộ NA:</b> (đi lướt qua, Cầm tay Nhi) Ơ, Nhi, sao cháu lại ở đây, giờ này cháu phải đi học rồi chứ. </p>
         <p><b>bé Nhi:</b> cháu… cháu… hu hu… cô ơi, cô đừng nói với bố mẹ cháu… huhu ( vừa nói vừa nấc lên như muốn khóc)</p>
@@ -88,8 +89,8 @@
         <p><b>Chị Hợp:</b> (mệt mỏi cúi đầu) Anh đừng nói vậy tội em, anh và con là tất cả của em. Anh đừng giận, em dọn cơm anh ăn nhé? Nhi ơi, ra ăn cơm con!</p>
         <p><b>Bé Nhi:</b> Dạ con sắp cơm rồi ạ, con mời bố mẹ ra ăn cơm.</p>
 
-        <p>(tiếng cuộc gọi đi)</p>
-        <audio src="./Audio/PhoneCalling.mp3" controls></audio>
+        <p>(có cuộc gọi đến)</p>
+        <audio src="./Audio/IphoneRingtoneShort.mp3" controls></audio>
         <p>Cuộc điện thoại: “A lô, Bác Hồng  ạ, dạ.. dạ… Bác ơi, cháu xin lỗi bác, hai hôm nữa nhận lượng cháu gửi hết nợ tiền nhà cho bác được ko ạ, bác thông cảm cho cháu. Dạ Dạ… lần này lần cuối, từ tháng sau cháu sẽ cố gắng trả đúng hạn, bác giúp cháu với”.</p>
         <p>(Ông chồng: vò đầu bức tóc, than thở: tiền tiền, lúc nào cũng tiền…)</p>
  
@@ -137,6 +138,8 @@
         document.getElementById("ding").addEventListener("play", function() {
             document.getElementById("tick").pause();
         });
+
+        document.getElementById("sadsong").volume = 0.3;
     </script>
 </body>
 </html>
