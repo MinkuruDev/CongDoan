@@ -34,7 +34,7 @@
         <h2 id="scene1">HOẠT CẢNH 1:</h2>
 
         <p>Tiếng tàu chạy, có giọng nói vang lên : Ga tiếp theo là Ga Học viện An ninh nhân dân</p>
-        <audio src="./Audio/Train.mp3" controls id="train"></audio>
+        <!-- <audio src="./Audio/Train.mp3" controls id="train"></audio> -->
         <p>(Mô tả: cổng HVAN đặt giữa sân khấu. Tàu Cát Linh- Hà Đông chạy qua. Cửa tàu mở, chị Ngọc bước xuống, nhạc nền “Bước qua nhau”. )</p>
         <audio src="./Audio/NhinSangTrai.mp3" controls id="nhintrai"></audio>
         <p>(Chuông điện thoại chị Ngọc reo)</p>
@@ -76,7 +76,7 @@
         <p><b>Hợp:</b> (xuất hiện bất ngờ từ sau đập vai Hải): Chị thấy rồi, gớm, cả cái HV này ai chẳng biết đến chú Hải mát tay sửa chữa, thôi, làm đi còn nghỉ.</p>
         
         <p><b>Hải:</b> Chị Hợp đấy à, người đâu mà nịnh thô thế, nhưng mà em thích….</p>
-        <p>Em nói cho mà biết, người em còn làm ra được nữa là mấy công việc này, là chuyên môn của em rồi! <button onclick="playSong()">Phát nhạc hoạt cảnh 3</button></p>
+        <p>Em nói cho mà biết, người em còn làm ra được nữa là mấy công việc này, là chuyên môn của em rồi! <button onclick="playSong('roitoiluon')">Phát nhạc hoạt cảnh 3</button></p>
         <p>Thế trưa nay cho bọn em ăn gì đấy? </p>
 
         <p><b>Hợp:</b> Này, trưa nay có món thịt kho ngon lắm, làm nhanh trưa còn nghỉ nhé!</p>
@@ -97,12 +97,13 @@
         <audio src="./Audio/IphoneRingtoneShort.mp3" controls></audio>
         <p>Hải: Alo, chào chủ tịch công đoàn, chủ tịch gọi em có việc gì đấy ạ?</p>
 
-        <p>Điện thoại: …..</p>
+        <p>Điện thoại: ….. </p>
 
-        <p>Hải: Dạ dạ, vâng vâng…</p>
+        <p>Hải: Dạ dạ, vâng vâng… </p>
 
         <p><b>Hải: </b>
-            2 chị ơi, Công đoàn Học viện mình cử em và 2 chị tham gia cuộc thi “tuyên truyền viên giỏi về pháp luật và Nghị quyết Đại hội XIII của Đảng” đấy.
+            2 chị ơi, Công đoàn Học viện mình cử em và 2 chị tham gia cuộc thi <button onclick="playSong('thanhxuan')">Phát nhạc txcct</button>
+            “tuyên truyền viên giỏi về pháp luật và Nghị quyết Đại hội XIII của Đảng” đấy.
         </p>
 
         <p><b>Ngọc Anh, Hợp:</b> Tốt quá, thôi, chúng ta về chuẩn bị đi thi thôi: </p>
@@ -111,7 +112,7 @@
 
         <p>Lên nhạc bài hát: Thanh xuân của chúng ta</p>
         
-        <audio src="./Audio/ThanhXuanCuaChungTa.wav" controls></audio>
+        <audio src="./Audio/ThanhXuanCuaChungTa.mp3" controls id="thanhxuan"></audio>
 
         <p><b>Hải:</b> Chúng tôi thay mặt cho hơn 300 đoàn viên Công đoàn Học viện ANND tham dự  hội thi với tinh thần:</p>
 

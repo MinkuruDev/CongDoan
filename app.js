@@ -10,16 +10,26 @@ song.addEventListener("play", function() {
     , 10000);
 });
 
-function playSong(){
-    song.play();
+function playSong(id){
+    document.getElementById(id).play();
 }
 
-document.getElementById("train").addEventListener("play", function(){
-    setTimeout(function() {
-        document.getElementById("train").volume = 0.5;
-    }, 2750);
-});
+// document.getElementById("train").addEventListener("play", function(){
+//     setTimeout(function() {
+//         document.getElementById("train").volume = 0.5;
+//     }, 2750);
+// });
 
-document.getElementById("nhintrai").addEventListener("play", function(){
-    document.getElementById("train").volume = 0.2;
-})
+// document.getElementById("nhintrai").addEventListener("play", function(){
+//     document.getElementById("train").volume = 0.2;
+// });
+
+document.getElementById("thanhxuan").addEventListener("play", function(){
+    document.getElementById("thanhxuan").volume = 0.2;
+    setTimeout(function() {
+        document.getElementById("thanhxuan").volume = 1;
+    }, 7000);
+    setTimeout(function() {
+        document.getElementById("thanhxuan").volume = 0.2;
+    }, 29125);
+});
