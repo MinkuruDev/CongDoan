@@ -3,7 +3,7 @@ const song = document.getElementById("roitoiluon");
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 song.addEventListener("play", function() {
-    song.volume = 0.2;
+    song.volume = 0.1;
     setTimeout(function() {
         song.volume = 1.0;
     }
@@ -25,11 +25,11 @@ function playSong(id){
 // });
 
 document.getElementById("thanhxuan").addEventListener("play", function(){
-    document.getElementById("thanhxuan").volume = 0.2;
+    document.getElementById("thanhxuan").volume = 0.1;
     setTimeout(function() {
         document.getElementById("thanhxuan").volume = 1;
     }, 7000);
     setTimeout(function() {
-        document.getElementById("thanhxuan").volume = 0.2;
+        document.getElementById("thanhxuan").volume = 0.1;
     }, 29125);
 });
