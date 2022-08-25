@@ -48,22 +48,25 @@
     <div id="scene2">
         <h2>Phân Cảnh 2</h2>
 
+        <p>(tiếng máy đo nhịp tim trong bệnh viện)</p>
         <audio src="./Audio/HeartBeat.mp3" controls id="heartbeat" loop></audio>
         <p>Cuộc gọi đi...</p>
-        <audio src="./Audio/PhoneCalling.mp3" controls></audio>
+        <!-- <audio src="./Audio/PhoneCalling.mp3" controls></audio> -->
         <p>alo em à? ...</p>
-        <audio src="./Audio/EndCall.mp3" controls></audio>
+        <!-- <audio src="./Audio/EndCall.mp3" controls></audio> -->
         <p>Chị Hợp thẫn thờ đi lại trước phòng cấp cứu (thời gian chậm chạp qua đi, ca mổ kéo dài trong nhiều giờ đồng hồ)</p>
         <!-- <p>(chạy tiếng ding sẽ tự động tắt tiếng đồng hồ)</p>
         <audio src="./Audio/Ding.mp3" controls id="ding"></audio> -->
         <p>(Hình ảnh chiếc đồng hồ quay hiển thị thời gian rất dài….)</p>
         <p>Đèn phòng cấp cứu vụt tắt, Bác sĩ đi ra</p>
+        <button onclick="stopSong('heartbeat')">dừng tiếng máy đo nhịp tim</button>
         <p><b>Chị Hợp</b> (mệt mỏi chạy lại): BS ơi chồng tôi sao rồi ạ</p>
         <p><b>BS:</b> Chúng tôi đã làm hết sức có thể nhưng chỉ giữ được tính mạng cho anh í, nhưng trước mắt có thể bị liệt 2 chân chị ạ. Tôi rất xin lỗi… </p>
         <p>Chị có thể vào thăm anh được rồi….(BS đi ra) </p>
         <p>Chị Hợp bước từng bước nặng nhọc về phía giường bệnh, nơi mà người chồng yêu quý của mình đang nằm đó. </p>
         <p><b>Chị Hợp:</b> (khóc nức nở ) Chồng ơi...</p>
         <audio src="./Audio/SadViolin.mp3" controls></audio>
+        <p>dọn sân khấu thì tắt nhạc</p>
         <br><br>
 
         <p>(bé Nhi đội mũ đeo túi đi bán vé số)</p>
@@ -76,6 +79,7 @@
         <p>Thỉnh thoảng cháu lại thấy mẹ ngồi khóc một mình, cháu thương mẹ lắm!</p>
         <p><b>Cán bộ NA:</b> Ra là như vậy… Cô bảo này, cháu thương bố mẹ như thế là tốt, nhưng cháu còn nhỏ, công việc của cháu là phải học, vé số ngày hôm nay cô sẽ mua hết cho cháu nhưng cháu phải hứa với cô không được đi làm công việc này nữa. cháu phải đi học nghe chưa. nào hứa với cô đi.</p>
         <p><b>Bé Nhi:</b> Dạ vâng ạ</p>
+        <button onclick="stopSong('sadsong')">tắt nhạc</button>
     </div>
 
     <div id="scene3">
@@ -94,12 +98,14 @@
         <p><b>Chị Hợp:</b> Em, Em đi làm thêm anh ạ</p>
         <p><b>Anh Hải:</b> (giọng chì chiết) Ngày trước sao không bao giờ đi làm thêm gì cả? Giờ tôi què quặt, nằm im một chỗ, cô chán tôi, cô chán cái nhà này rồi đúng không? Cứ nói thẳng ra đi.</p>
         <p><b>Chị Hợp:</b> (mệt mỏi cúi đầu) Anh đừng nói vậy tội em, anh và con là tất cả của em. Anh đừng giận, em dọn cơm anh ăn nhé? Nhi ơi, ra ăn cơm con!</p>
-        <p><b>Bé Nhi:</b> Dạ con sắp cơm rồi ạ, con mời bố mẹ ra ăn cơm.</p>
+        <!-- <p><b>Bé Nhi:</b> Dạ con sắp cơm rồi ạ, con mời bố mẹ ra ăn cơm.</p> -->
 
         <p>(có cuộc gọi đến)</p>
         <audio src="./Audio/IphoneRingtoneShort.mp3" controls></audio>
         <p>Cuộc điện thoại: “A lô, Bác Hồng  ạ, dạ.. dạ… Bác ơi, cháu xin lỗi bác, hai hôm nữa nhận lượng cháu gửi hết nợ tiền nhà cho bác được ko ạ, bác thông cảm cho cháu. Dạ Dạ… lần này lần cuối, từ tháng sau cháu sẽ cố gắng trả đúng hạn, bác giúp cháu với”.</p>
-        <audio src="./Audio/EndCall.mp3" controls></audio> <br>
+        <p>(tiếng kết thúc cuộc gọi)</p>
+        <audio src="./Audio/EndCall.mp3" controls></audio>
+        <p>(nhạc nền)</p>
         <audio src="./Audio/Unknown0.mp3" controls id="unknown0"></audio>
         <p>(Ông chồng: vò đầu bức tóc, than thở: tiền tiền, lúc nào cũng tiền…)</p>
         
@@ -111,6 +117,7 @@
         <!-- <audio src="./Audio/Breaking.mp3" controls></audio> -->
         <p>Cả nhà rơi vào trạng thái khủng hoảng, hai mẹ con cùng khóc, bố thì gào to, mất kiểm soát, đúng lúc đó, cán bộ NA và hai đồng nghiệp đi vào</p>
 
+        <p>(nhạc nền, khi bật sẽ tự tắt nhạc trước)</p>
         <audio src="./Audio/Unknown1.mp3" id="unknown1" controls></audio>
         <p>Cán bộ NA, và 02 đồng nghiệp: Em chào anh Hải, chị Hợp, cô chào Yến Nhi.</p>
         <p><b>Chị Hợp:</b> (Vội lau nước mắt, luống cuống đứng dậy, định đi dọn mâm bát) Chị chào các em, mời các em vào nhà.</p>
@@ -132,6 +139,8 @@
         <p><b>cán bộ NA:</b> Anh Hải này, Anh là một kỹ sư giỏi, lại có kinh nghiệm lâu năm trong nghề xây dựng, em mong muốn anh sẽ tiếp tục vận dụng kiến thức đó của mình để làm việc, kiếm thu nhập chính đáng, góp ích cho gia đình</p>
         <p><b>Anh Hải:</b> (ngẩng đầu lên, giọng trầm buồn) Tàn tật như tôi bây giờ ai còn thuê mướn nữa.</p>
         <p><b>cán bộ NA:</b> Chỉ cần anh quyết tâm, BCH Công đoàn chúng em đã liên hệ 1 vài công ty về thiết kế và xây dựng, sau khi biết hoàn cảnh của anh, họ nhất trí sẽ tạo điều kiện để anh làm việc, thiết kế online. Em sẽ giúp anh kết nối và bàn bạc cụ thể với họ. Anh nhất trí chứ ạ?</p>
+        
+        <p>(nhạc nền, khi bật sẽ tự tắt nhạc trước)</p>
         <audio src="./Audio/StellarStellarInst.mp3" controls id="stellar"></audio>
         <p><b>Anh Hải:</b> Thật tốt quá, tôi không biết phải nói sao. Thì ra tôi vẫn còn cơ hội làm gì đó có ích cho gia đình, cho xã hội. </p>
         <p>(Quay sang c Hợp) Vợ ơi, Anh sai rồi. Em hãy tha thứ cho anh. (Quay sang Nhi, cầm tay con) Con gái, bố xin lỗi con.</p>
@@ -164,12 +173,16 @@
         document.getElementById("stellar").volume = SMALL_VOLUME/2;
 
         document.getElementById("unknown1").addEventListener("play", function(){
-            document.getElementById("unknown0").pause();
+            stopSong("unknown0");
         });
 
         document.getElementById("stellar").addEventListener("play", function(){
-            document.getElementById("unknown1").pause();
+            stopSong("unknown1");
         });
+
+        function stopSong(id){
+            document.getElementById(id).pause();
+        }
     </script>
 </body>
 </html>
